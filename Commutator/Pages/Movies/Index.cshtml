@@ -1,0 +1,87 @@
+﻿@page
+@model Commutator.Pages.Movies.IndexModel
+
+@{
+    ViewData["Title"] = "Редактор таблицы";
+}
+
+<p>
+    <a class="blubsd" asp-page="Create">Добавить новый коммутатор</a>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].IP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Mac)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].VLAN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Sern)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Invn)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].BuyDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].UstDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Atug)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Koment)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Movie) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mac)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VLAN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sern)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Invn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BuyDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UstDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Atug)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Koment)
+            </td>
+            <td>
+                    <a class="blubtn" input type="button" asp-page="./Edit" asp-route-id="@item.ID">Редактировать</a>
+                    <a class="blub" asp-page="./Delete" asp-route-id="@item.ID">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

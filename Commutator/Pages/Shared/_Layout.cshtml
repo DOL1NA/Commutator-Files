@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Коммутатор</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="icon" href="/favicon.ico?ver=d7531" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/touch-icon-iphone.png?ver=d7531">
+    <link rel="apple-touch-icon" sizes="76x76" href="/touch-icon-ipad.png?ver=d7531">
+    <link rel="apple-touch-icon" sizes="120x120" href="/touch-icon-iphone-retina.png?ver=d7531">
+    <link rel="apple-touch-icon" sizes="152x152" href="/touch-icon-ipad-retina.png?ver=d7531">
+    <meta name="msapplication-TileImage" content="/touch-w8-mediumtile.png?ver=d7531" />
+    <meta name="msapplication-square70x70logo" content="/touch-w8-smalltile.png?ver=d7531" />
+    <meta name="msapplication-square150x150logo" content="/touch-w8-mediumtile.png?ver=d7531" />
+    <meta name="msapplication-wide310x150logo" content="/touch-w8-widetile.png?ver=d7531" />
+    <meta name="msapplication-square310x310logo" content="/touch-w8-largetile.png?ver=d7531" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="blubmen" asp-area="" asp-page="/Index">Учёт коммутаторов</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="blubmen" asp-page="/Movies/Index">Редактирование</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - DOLINA
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

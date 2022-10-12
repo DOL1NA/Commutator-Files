@@ -1,0 +1,366 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+    table tr {
+        background: white;
+        border-bottom: 1px solid
+    }
+
+    table th, table td {
+        padding: 10px 20px;
+    }
+
+        table td span {
+            background: #ffffff00;
+            color: #666666b5;
+            display: none;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 5px;
+            position: absolute;
+            text-transform: uppercase;
+            top: 0;
+            left: 0;
+        }
+
+@media (max-width: 1000px) {
+    .container {
+        max-width: 900px;
+    }
+    body {
+        font-size: 16px;
+    }
+    table thead {
+        left: -9999px;
+        position: relative;
+        visibility: hidden;
+    }
+
+    table tr {
+        border-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    table td {
+        border: 1px solid;
+        margin: 0 -1px -1px 0;
+        padding-top: 35px;
+        position: relative;
+        width: 50%;
+    }
+
+        table td span {
+            display: block;
+        }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    body {
+        font-size: 12px;
+    }
+}
+
+a.blubtn {
+    width: auto;
+    text-align: center;
+    display: block;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    border: #1A1A1A 1px solid;
+    color: #1A1A1A;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px auto;
+    transition: .5s;
+    border-radius: 0px;
+}
+
+    a.blubtn:hover {
+        top: 5px;
+        transition: .5s;
+        color: #fff;
+        border: #2a5c03 1px solid;
+        border-radius: 10px;
+        background-color: #45bd44;
+    }
+
+    a.blubtn:active {
+        color: #000;
+        border: #1A1A1A 1px solid;
+        transition: .07s;
+        background-color: #1861ac;
+    }
+
+a.blub {
+    width: 90px;
+    text-align: center;
+    display: block;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    border: #1A1A1A 1px solid;
+    color: #1A1A1A;
+    transition: .5s;
+    border-radius: 0px;
+}
+
+    a.blub:hover {
+        top: 5px;
+        transition: .5s;
+        color: #fff;
+        border: #2a5c03 1px solid;
+        border-radius: 10px;
+        background-color: #bd4444;
+    }
+
+    a.blub:active {
+        color: #000;
+        border: #1A1A1A 1px solid;
+        transition: .07s;
+        background-color: #1861ac;
+    }
+a.blubsd {
+    width: auto;
+    text-align: center;
+    display: block;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    border: #1A1A1A 1px solid;
+    color: #1A1A1A;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px auto;
+    transition: .5s;
+    border-radius: 0px;
+}
+
+    a.blubsd:hover {
+        top: 5px;
+        transition: .5s;
+        color: #fff;
+        border: #2a5c03 1px solid;
+        border-radius: 10px;
+        background-color: #813fae;
+    }
+
+    a.blubsd:active {
+        color: #000;
+        border: #1A1A1A 1px solid;
+        transition: .07s;
+        background-color: #1861ac;
+    }
+a.blubmen {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    width: auto;
+    display: block;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 22px;
+    padding: 3px;
+    transition: .5s;
+    color: #1A1A1A;
+}
+
+    a.blubmen:hover {
+        transition: .5s;
+        color: #6d15bb;
+        font-size: 26px;
+    }
+
+    a.blubmen:active {
+        color: #fff;
+        transition: .1s;
+        background-color: #1a1a1a32;
+        border-radius: 10px;
+    }
+a.blubs {
+    width: 103px;
+    height: auto;
+    text-align: center;
+    display: block;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 5px 0px 0px 0px;
+    border: #1A1A1A 1px solid;
+    color: #1A1A1A;
+    transition: .5s;
+    border-radius: 0px;
+}
+
+    a.blubs:hover {
+        top: 5px;
+        transition: .5s;
+        color: #fff;
+        border: #1b6ec2 1px solid;
+        border-radius: 10px;
+        background-color: #813fae;
+    }
+
+    a.blubs:active {
+        color: #000;
+        border: #1A1A1A 1px solid;
+        transition: .07s;
+        background-color: #1861ac;
+    }
+.faq_list{
+    position: relative; 
+}
+.faq_item_title{
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+}
+.faq_show_all .faq_item_title{
+    padding-left: 23px;
+    margin-top: 20px;
+}
+.faq_item_title_inner{
+    display: inline-block;
+    position: relative;
+    padding: 0 60px 0 0;
+    cursor: pointer;
+}
+.faq_item_title_inner:hover:before{
+    transform: translateY(1px);
+}
+.faq_item_title_inner:before{
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    cursor: pointer;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
+.faq_item_title_inner.open:before{
+    transform: rotate(180deg);
+}
+.faq_item_body{
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+a.blubspp {
+    width: 254px;
+    height: auto;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 5px 0px 0px 0px;
+    border: #1A1A1A 1px solid;
+    color: #1A1A1A;
+    transition: .5s;
+    border-radius: 0px;
+    font-family: arial;
+}
+
+    a.blubspp:hover {
+        top: 5px;
+        transition: .5s;
+        color: #fff;
+        border: #370063 1px solid;
+        border-radius: 10px;
+        background-color: #813fae73;
+    }
+
+    a.blubspp:active {
+        color: #fff;
+        border: #1A1A1A 1px solid;
+        transition: .07s;
+        background-color: #1861ac;
+    }

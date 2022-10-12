@@ -1,0 +1,78 @@
+﻿@page
+@model Commutator.Pages.Movies.EditModel
+
+@{
+    ViewData["Title"] = "Редактирование";
+}
+
+<h4>Редактирование</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Movie.ID" />
+            <div class="form-group">
+                <label asp-for="Movie.Title" class="control-label"></label>
+                <input asp-for="Movie.Title" class="form-control" />
+                <span asp-validation-for="Movie.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.IP" class="control-label"></label>
+                <input asp-for="Movie.IP" class="form-control" />
+                <span asp-validation-for="Movie.IP" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Mac" class="control-label"></label>
+                <input asp-for="Movie.Mac" class="form-control" />
+                <span asp-validation-for="Movie.Mac" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.VLAN" class="control-label"></label>
+                <input asp-for="Movie.VLAN" class="form-control" />
+                <span asp-validation-for="Movie.VLAN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Sern" class="control-label"></label>
+                <input asp-for="Movie.Sern" class="form-control" />
+                <span asp-validation-for="Movie.Sern" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Invn" class="control-label"></label>
+                <input asp-for="Movie.Invn" class="form-control" />
+                <span asp-validation-for="Movie.Invn" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.BuyDate" class="control-label"></label>
+                <input asp-for="Movie.BuyDate" class="form-control" />
+                <span asp-validation-for="Movie.BuyDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.UstDate" class="control-label"></label>
+                <input asp-for="Movie.UstDate" class="form-control" />
+                <span asp-validation-for="Movie.UstDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Atug" class="control-label"></label>
+                <input asp-for="Movie.Atug" class="form-control" />
+                <span asp-validation-for="Movie.Atug" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie.Koment" class="control-label"></label>
+                <input asp-for="Movie.Koment" class="form-control" />
+                <span asp-validation-for="Movie.Koment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="blubs" asp-page="./Index">Вернуться к таблице</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

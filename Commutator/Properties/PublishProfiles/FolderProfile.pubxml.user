@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\DOLINA\Desktop\Commutator — копия (5)\Commutator\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2022-10-12T02:03:26.5918976Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="CommutatorContext">
+      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=CommutatorContext-ccb8cf7c-8425-4dae-bf97-65861476b22a%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Commutator.Data.CommutatorContext">
+      <Value>Server=%28localdb%29\mssqllocaldb%3bDatabase=CommutatorContext-ccb8cf7c-8425-4dae-bf97-65861476b22a%3bTrusted_Connection=True%3bMultipleActiveResultSets=true</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
